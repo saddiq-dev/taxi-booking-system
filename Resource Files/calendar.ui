@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>calendarScreen_Dialog</class>
+ <widget class="QDialog" name="calendarScreen_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="calendarScreen" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>651</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 8px solid black;
+background-color:qlineargradient(spread:pad, x1:0.0511364, y1:1, x2:0, y2:0, stop:0 rgba(251, 255, 0, 255), stop:0.98 rgba(0, 61, 255, 255), stop:1 rgba(0, 0, 0, 0));
+</string>
+   </property>
+   <widget class="QLabel" name="calendar_txt">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+border: none;
+background-color: none;
+color: yellow;</string>
+    </property>
+    <property name="text">
+     <string>CALENDAR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="calendarLabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>90</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+text-align: center;
+border: none;
+color:white;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Can't remember what day you need to Book a Trip for?&lt; br&gt; Check out the Calendar to make sure!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calendarBackBtn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>390</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: red;
+border: 3px solid blue;
+box-sizing: border-box;
+border-radius: 15px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 13px;
+text-align: center;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>BACK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:balck;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>441</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(155, 170, 168);
+color: black;
+border: 2px solid rgb(255, 0, 127);
+font-size: 14px;
+padding: 5px 15px;
+
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Sketch imgs/official-taxi-logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>calendar_txt</zorder>
+   <zorder>calendarLabel</zorder>
+   <zorder>calendarBackBtn</zorder>
+   <zorder>calendarWidget</zorder>
+   <zorder>logo</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

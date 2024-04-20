@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>confirmBookingScreen_Dialog</class>
+ <widget class="QDialog" name="confirmBookingScreen_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="confirmABookingScreen" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>651</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 8px solid black;
+background-color:qlineargradient(spread:pad, x1:0.0511364, y1:1, x2:0, y2:0, stop:0 rgba(251, 255, 0, 255), stop:0.98 rgba(0, 61, 255, 255), stop:1 rgba(0, 0, 0, 0));
+</string>
+   </property>
+   <widget class="QLabel" name="confirm_txt">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+border: none;
+background-color: none;
+color: yellow;
+</string>
+    </property>
+    <property name="text">
+     <string>CONFIRM BOOKING</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backBtn">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>400</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: red;
+border: 3px solid blue;
+box-sizing: border-box;
+border-radius: 15px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 13px;
+text-align: center;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>BACK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="confirmNowBtn">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>350</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: blue;
+border: 2px solid rgb(255, 0, 127);
+box-sizing: border-box;
+border-radius: 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>CONFIRM NOW</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+border-bottom: 2px solid black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dateBookedLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Date Booked</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dropOffAddresslLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>170</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Drop Off Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pickUpDateLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>230</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Pick Up Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pickUpAddressLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>140</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Pick Up Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pickUpTimeLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Pick Up Time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="driverIdLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="adminIdLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>200</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blueBackground">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>591</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(255, 0, 127);
+background-color: rgb(149, 200, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="confirmSlogan">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>611</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+text-align: center;
+border: none;
+color: white;
+background-color: none;
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;To Confirm a Booking, enter the Booking ID for the Booking you want to Confirm,&lt;br/&gt;then click the Select Booking button, then proceed to make the neccessary&lt;br/&gt;changes then click Confirm Now. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bookingStatusLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>290</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emailLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>260</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customerIdLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>170</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bookingIdLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Booking ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bookingIdLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>140</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pickUpAddressLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>140</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dropOffAddressLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>170</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dateBookedLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>320</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pickUpTimeLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>200</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="costOfTripLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>260</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pickUpDateLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>230</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="paidLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>290</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="customerIdLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Customer ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bookingStatusLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Booking Status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emailLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="costOfTripLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>260</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Cost of Trip</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="driverIdLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Driver ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adminIdLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Admin ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="paidLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>290</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Paid</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectBookingBtn">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>350</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: blue;
+border: 2px solid rgb(255, 0, 127);
+box-sizing: border-box;
+border-radius: 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>SELECT BOOKING</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;
+border: none;
+padding: 3.5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Sketch imgs/official-taxi-logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>blueBackground</zorder>
+   <zorder>label</zorder>
+   <zorder>backBtn</zorder>
+   <zorder>confirmNowBtn</zorder>
+   <zorder>confirm_txt</zorder>
+   <zorder>dateBookedLabel</zorder>
+   <zorder>dropOffAddresslLabel</zorder>
+   <zorder>pickUpDateLabel</zorder>
+   <zorder>pickUpAddressLabel</zorder>
+   <zorder>pickUpTimeLabel</zorder>
+   <zorder>driverIdLineEdit</zorder>
+   <zorder>adminIdLineEdit</zorder>
+   <zorder>confirmSlogan</zorder>
+   <zorder>bookingStatusLineEdit</zorder>
+   <zorder>emailLineEdit</zorder>
+   <zorder>customerIdLineEdit</zorder>
+   <zorder>bookingIdLabel</zorder>
+   <zorder>bookingIdLineEdit</zorder>
+   <zorder>pickUpAddressLineEdit</zorder>
+   <zorder>dropOffAddressLineEdit</zorder>
+   <zorder>dateBookedLineEdit</zorder>
+   <zorder>pickUpTimeLineEdit</zorder>
+   <zorder>costOfTripLineEdit</zorder>
+   <zorder>pickUpDateLineEdit</zorder>
+   <zorder>paidLineEdit</zorder>
+   <zorder>customerIdLabel</zorder>
+   <zorder>bookingStatusLabel</zorder>
+   <zorder>emailLabel</zorder>
+   <zorder>costOfTripLabel</zorder>
+   <zorder>driverIdLabel</zorder>
+   <zorder>adminIdLabel</zorder>
+   <zorder>paidLabel</zorder>
+   <zorder>selectBookingBtn</zorder>
+   <zorder>logo</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

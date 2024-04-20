@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>makeBookingScreen_Dialog</class>
+ <widget class="QDialog" name="makeBookingScreen_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>578</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="makeABookingScreen" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>561</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 3px solid blue;
+background-color: yellow;</string>
+   </property>
+   <widget class="QLabel" name="make_txt">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+border: none;
+background-color: none;
+color: yellow;
+</string>
+    </property>
+    <property name="text">
+     <string>UPDATE A BOOKING</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backBtn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>340</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: red;
+border: 3px solid blue;
+box-sizing: border-box;
+border-radius: 15px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 13px;
+text-align: center;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>BACK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="updateNowBtn">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>150</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: blue;
+border: 2px solid rgb(255, 0, 127);
+box-sizing: border-box;
+border-radius: 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight:500;
+font-size: 13px;
+text-align: center;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>UPDATE NOW</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>561</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+border-bottom: 2px solid black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dateBookedLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 14px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Date Booked</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dropOffAddresslLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 14px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Drop Off Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pickUpDateLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 14px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Pick Up Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pickUpAddressLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 14px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Pick Up Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pickUpTimeLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 14px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Pick Up Time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dropOffAddressLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>220</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PickUpAddressLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>541</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(255, 0, 127);
+background-color: rgb(149, 200, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="makeSlogan">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>80</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+text-align: center;
+border: none;
+color:red;
+</string>
+    </property>
+    <property name="text">
+     <string>UPDATE NOW!!!</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="pickUpTimeLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>250</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="pickUpDateLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>280</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateBookedLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>160</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="BookingIDLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #C4C4C4;
+border: 1px solid blue;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dateBookedLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Roboto;
+font-style:normal;
+font-weight:500;
+font-size: 14px;
+text-align: center;
+color: #000000;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Booking ID</string>
+    </property>
+   </widget>
+   <zorder>label_11</zorder>
+   <zorder>label</zorder>
+   <zorder>backBtn</zorder>
+   <zorder>updateNowBtn</zorder>
+   <zorder>make_txt</zorder>
+   <zorder>dateBookedLabel</zorder>
+   <zorder>dropOffAddresslLabel</zorder>
+   <zorder>pickUpDateLabel</zorder>
+   <zorder>pickUpAddressLabel</zorder>
+   <zorder>pickUpTimeLabel</zorder>
+   <zorder>dropOffAddressLineEdit</zorder>
+   <zorder>PickUpAddressLineEdit</zorder>
+   <zorder>makeSlogan</zorder>
+   <zorder>pickUpTimeLineEdit</zorder>
+   <zorder>pickUpDateLineEdit</zorder>
+   <zorder>dateBookedLineEdit</zorder>
+   <zorder>BookingIDLineEdit</zorder>
+   <zorder>dateBookedLabel_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
