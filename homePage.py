@@ -64,93 +64,93 @@ class Ui_homeScreen_Dialog(object):
         self.home = QtWidgets.QWidget(homeScreen_Dialog)
         self.home.setGeometry(QtCore.QRect(10, 10, 1280, 750))
         self.home.setStyleSheet("border: 8px solid black;\n"
-    "background-color:qlineargradient(spread:pad, x1:0.0511364, y1:1, x2:0, y2:0, stop:0 rgba(251, 255, 0, 255), "
-    "stop:0.98 rgba(0, 61, 255, 255), stop:1 rgba(0, 0, 0, 0));\n""")
+                                "background-color:qlineargradient(spread:pad, x1:0.0511364, y1:1, x2:0, y2:0, stop:0 rgba(251, 255, 0, 255), "
+                                "stop:0.98 rgba(0, 61, 255, 255), stop:1 rgba(0, 0, 0, 0));\n""")
         self.home.setObjectName("home")
         self.contactInformationBtn = QtWidgets.QPushButton(self.home,
                                                            clicked=lambda: self.contactInformation_button_click())
         self.contactInformationBtn.setGeometry(QtCore.QRect(480, 520, 140, 40))
         self.contactInformationBtn.setStyleSheet("background:red;\n"
-    "border: 2px solid blue;\n"
-    "box-sizing: border-box;\n"
-    "border-radius: 15px;\n"
-    "font-family: Roboto;\n"
-    "font-style: normal;\n"
-    "font-weight: 900;\n"
-    "font-size: 14px;\n"
-    "text-align: center;\n"
-    "color: white;\n""")
+                                                 "border: 2px solid blue;\n"
+                                                 "box-sizing: border-box;\n"
+                                                 "border-radius: 15px;\n"
+                                                 "font-family: Roboto;\n"
+                                                 "font-style: normal;\n"
+                                                 "font-weight: 900;\n"
+                                                 "font-size: 14px;\n"
+                                                 "text-align: center;\n"
+                                                 "color: white;\n""")
         self.contactInformationBtn.setObjectName("contactInformationBtn")
         self.customerServicesBtn = QtWidgets.QPushButton(self.home,
                                                          clicked=lambda: self.customerServices_button_click())
         self.customerServicesBtn.setGeometry(QtCore.QRect(770, 420, 190, 50))
         self.customerServicesBtn.setStyleSheet("background: white;\n"
-    "border: 3px solid blue;\n"
-    "box-sizing: border-box;\n"
-    "border-radius: 20px;\n"
-    "font-family: Roboto;\n"
-    "font-style: normal;\n"
-    "font-weight: 900;\n"
-    "font-size: 16px;")
+                                               "border: 3px solid blue;\n"
+                                               "box-sizing: border-box;\n"
+                                               "border-radius: 20px;\n"
+                                               "font-family: Roboto;\n"
+                                               "font-style: normal;\n"
+                                               "font-weight: 900;\n"
+                                               "font-size: 16px;")
         self.customerServicesBtn.setObjectName("customerServicesBtn")
         self.adminServicesBtn = QtWidgets.QPushButton(self.home,
                                                       clicked=lambda: self.adminServices_button_click())
         self.adminServicesBtn.setGeometry(QtCore.QRect(330, 420, 190, 50))
         self.adminServicesBtn.setStyleSheet("background: white;\n"
-    "border: 3px solid blue;\n"
-    "box-sizing: border-box;\n"
-    "border-radius: 20px;\n"
-    "font-family: Roboto;\n"
-    "font-style: normal;\n"
-    "font-weight: 900;\n"
-    "font-size: 16px;\n""")
+                                            "border: 3px solid blue;\n"
+                                            "box-sizing: border-box;\n"
+                                            "border-radius: 20px;\n"
+                                            "font-family: Roboto;\n"
+                                            "font-style: normal;\n"
+                                            "font-weight: 900;\n"
+                                            "font-size: 16px;\n""")
         self.adminServicesBtn.setObjectName("adminServicesBtn")
         self.driverServicesBtn = QtWidgets.QPushButton(self.home,
                                                        clicked=lambda: self.driverServices_button_click())
         self.driverServicesBtn.setGeometry(QtCore.QRect(550, 420, 190, 50))
         self.driverServicesBtn.setStyleSheet("background: white;\n"
-    "border: 3px solid blue;\n"
-    "box-sizing: border-box;\n"
-    "border-radius: 20px;\n"
-    "font-family: Roboto;\n"
-    "font-style: normal;\n"
-    "font-weight: 900;\n"
-    "font-size: 16px;")
+                                             "border: 3px solid blue;\n"
+                                             "box-sizing: border-box;\n"
+                                             "border-radius: 20px;\n"
+                                             "font-family: Roboto;\n"
+                                             "font-style: normal;\n"
+                                             "font-weight: 900;\n"
+                                             "font-size: 16px;")
         self.driverServicesBtn.setObjectName("driverServicesBtn")
         self.slogan = QtWidgets.QLabel(self.home)
         self.slogan.setGeometry(QtCore.QRect(460, 270, 500, 41))
         self.slogan.setStyleSheet("font-family: Roboto;\n"
-    "font-style: normal;\n"
-    "font-weight: 900;\n"
-    "font-size: 18px;\n"
-    "text-align: center;\n"
-    "border: none;\n"
-    "background-color: none;\n"
-    "color: white;")
+                                  "font-style: normal;\n"
+                                  "font-weight: 900;\n"
+                                  "font-size: 18px;\n"
+                                  "text-align: center;\n"
+                                  "border: none;\n"
+                                  "background-color: none;\n"
+                                  "color: white;")
         self.slogan.setObjectName("slogan")
         self.calendarBtn = QtWidgets.QPushButton(self.home,
                                                  clicked=lambda: self.calendar_button_click())
         self.calendarBtn.setGeometry(QtCore.QRect(660, 520, 140, 40))
         self.calendarBtn.setStyleSheet("background:red;\n"
-    "border: 2px solid blue;\n"
-    "box-sizing: border-box;\n"
-    "border-radius: 15px;\n"
-    "font-family: Roboto;\n"
-    "font-style: normal;\n"
-    "font-weight: 900;\n"
-    "font-size: 14px;\n"
-    "text-align: center;\n"
-    "color: white;")
+                                       "border: 2px solid blue;\n"
+                                       "box-sizing: border-box;\n"
+                                       "border-radius: 15px;\n"
+                                       "font-family: Roboto;\n"
+                                       "font-style: normal;\n"
+                                       "font-weight: 900;\n"
+                                       "font-size: 14px;\n"
+                                       "text-align: center;\n"
+                                       "color: white;")
         self.calendarBtn.setObjectName("calendarBtn")
         self.instruction_label = QtWidgets.QLabel(self.home)
         self.instruction_label.setGeometry(QtCore.QRect(180, 635, 900, 50))
         self.instruction_label.setStyleSheet("background-color:none;\n"
-    "border: none;\n""")
+                                             "border: none;\n""")
         self.instruction_label.setObjectName("instruction_label")
         self.logo = QtWidgets.QLabel(self.home)
         self.logo.setGeometry(QtCore.QRect(570, 30, 130, 130))
         self.logo.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                "border: none;")
         self.logo.setText("")
         self.logo.setPixmap(QtGui.QPixmap("../TaxiBookingSystem/Imgs/official-taxi-logo.png"))
         self.logo.setScaledContents(True)
@@ -158,7 +158,7 @@ class Ui_homeScreen_Dialog(object):
         self.star2 = QtWidgets.QLabel(self.home)
         self.star2.setGeometry(QtCore.QRect(580, 350, 31, 31))
         self.star2.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                 "border: none;")
         self.star2.setText("")
         self.star2.setPixmap(QtGui.QPixmap("../TaxiBookingSystem/Imgs/single-star.png"))
         self.star2.setScaledContents(True)
@@ -166,7 +166,7 @@ class Ui_homeScreen_Dialog(object):
         self.star1 = QtWidgets.QLabel(self.home)
         self.star1.setGeometry(QtCore.QRect(540, 350, 31, 31))
         self.star1.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                 "border: none;")
         self.star1.setText("")
         self.star1.setPixmap(QtGui.QPixmap("../Sketch imgs/single-star.png"))
         self.star1.setScaledContents(True)
@@ -174,7 +174,7 @@ class Ui_homeScreen_Dialog(object):
         self.star3 = QtWidgets.QLabel(self.home)
         self.star3.setGeometry(QtCore.QRect(620, 350, 31, 31))
         self.star3.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                 "border: none;")
         self.star3.setText("")
         self.star3.setPixmap(QtGui.QPixmap("../Sketch imgs/single-star.png"))
         self.star3.setScaledContents(True)
@@ -182,7 +182,7 @@ class Ui_homeScreen_Dialog(object):
         self.star4 = QtWidgets.QLabel(self.home)
         self.star4.setGeometry(QtCore.QRect(660, 350, 31, 31))
         self.star4.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                 "border: none;")
         self.star4.setText("")
         self.star4.setPixmap(QtGui.QPixmap("../Sketch imgs/single-star.png"))
         self.star4.setScaledContents(True)
@@ -190,7 +190,7 @@ class Ui_homeScreen_Dialog(object):
         self.star5 = QtWidgets.QLabel(self.home)
         self.star5.setGeometry(QtCore.QRect(700, 350, 31, 31))
         self.star5.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                 "border: none;")
         self.star5.setText("")
         self.star5.setPixmap(QtGui.QPixmap("../Sketch imgs/single-star.png"))
         self.star5.setScaledContents(True)
@@ -198,7 +198,7 @@ class Ui_homeScreen_Dialog(object):
         self.welcome_label = QtWidgets.QLabel(self.home)
         self.welcome_label.setGeometry(QtCore.QRect(510, 170, 256, 106))
         self.welcome_label.setStyleSheet("background-color: none;\n"
-    "border: none;")
+                                         "border: none;")
         self.welcome_label.setText("")
         self.welcome_label.setPixmap(QtGui.QPixmap("../Sketch imgs/welcome.png"))
         self.welcome_label.setScaledContents(True)
@@ -215,21 +215,22 @@ class Ui_homeScreen_Dialog(object):
         self.adminServicesBtn.setText(_translate("homeScreen_Dialog", "ADMIN SERVICES"))
         self.driverServicesBtn.setText(_translate("homeScreen_Dialog", "DRIVER SERVICES"))
         self.slogan.setText(_translate("homeScreen_Dialog", "A DIFFERENT KIND OF TAXI COMPANY. \n"
-        "        A DIFFEREENT KIND OF TAXI."))
+                                                            "        A DIFFEREENT KIND OF TAXI."))
         self.calendarBtn.setText(_translate("homeScreen_Dialog", "CALENDAR"))
         self.instruction_label.setText(_translate("homeScreen_Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML "
-        "4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-        "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-        "p, li { white-space: pre-wrap; }\n"
-        "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
-        "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0"
-        "; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#000000;\">Please note: New Customers "
-        "can click the Customer Services button to Register<br /> and New Drivers can contact the company to apply.</span>"
-        "</p></body></html>"))
+                                                                       "4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                                                       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                                                       "p, li { white-space: pre-wrap; }\n"
+                                                                       "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+                                                                       "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0"
+                                                                       "; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#000000;\">Please note: New Customers "
+                                                                       "can click the Customer Services button to Register<br /> and New Drivers can contact the company to apply.</span>"
+                                                                       "</p></body></html>"))
 
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     homeScreen_Dialog = QtWidgets.QDialog()
     ui = Ui_homeScreen_Dialog()
